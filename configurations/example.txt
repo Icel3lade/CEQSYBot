@@ -1,0 +1,23 @@
+[bot]
+  [server]
+    #What server the bot connects to
+    server = "irc.freenode.net"
+    #What port the bot connects on
+    port = "6667"
+    servernick = "Freenode"
+  [/server]
+
+  [account]
+    #The first nick it should try
+    base_nick = "MyBot"
+    #The password it should try to login with
+    password = "MyV3rrysecurep@ssword!1"
+  [/account]
+
+  [local]
+    #Where to store logs?
+    log_directory = "/opt/ircbot/CEQSYBot/logs/Freenode/"
+    #What command to run when a new message is received
+    processor = "perl /opt/ircbot/CEQSYBot/parsers/plugin_parser/example.pl"
+  [/local]
+[/bot]
